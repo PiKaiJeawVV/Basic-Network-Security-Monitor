@@ -18,3 +18,7 @@
     chmod +x  install.sh
     ./install.sh
 ```
+### Install Lib Python
+```
+    pip install -r requirements.txt
+```
