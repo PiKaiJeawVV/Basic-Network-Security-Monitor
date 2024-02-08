@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      TZ: "Asia/Bangkok"
+      MYSQL_ROOT_PASSWORD: ********** #<-- Password Database
+    volumes:
+      - /home/db_mysql:/var/lib/mysql
+    networks:
+      interface:
+        ipv4_address: 172.18.0.2
+    
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      interface:
+        ipv4_address: 172.18.0.3
+
+networks:
+  interface:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
+          gateway:  172.18.0.1
