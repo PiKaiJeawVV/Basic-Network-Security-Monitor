@@ -1,5 +1,5 @@
 # Basic-Network-Security-Monitor
-### Install Docker & Docker Compose
+### _Install Docker & Docker Compose_
 #####    1. Install Docker-compose
 - https://docs.docker.com/compose/install/standalone/
 
@@ -13,12 +13,12 @@
     cd docker-file
     docker-compose up -d
 ```
-### Run file install.sh
+### _Run file install.sh_
 ```sh
     chmod +x  install.sh
     ./install.sh
 ```
-### Install Lib Python
+### _Install Lib Python_
 ```
     pip install -r requirements.txt
 ```
