@@ -4,7 +4,7 @@
 
 ### Install Docker & Docker Compose
 1. install Docker-compose
-https://docs.docker.com/compose/install/standalone/
+- https://docs.docker.com/compose/install/standalone/
 2. install Docker
 ```
     sudo apt isntall docker
