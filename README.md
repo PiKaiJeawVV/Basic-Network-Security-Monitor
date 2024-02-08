@@ -22,3 +22,8 @@
 ```
     pip install -r requirements.txt
 ```
+### _Config snort.conf_
+```sh
+    nano /etc/snort/snort.conf
+    output alert_csv: alert.csv.list timestamp,msg,src,srcport,dst,dstport    <-- ### Put in step 6 ###
+```
