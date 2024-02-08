@@ -12,7 +12,7 @@ mkdir -p /home/snort-monitor/code/
 echo "Make folder Done !"
 
 ### Move Python file
-cp code/main.py /home/snort-monitor/code/
+cp Code/main.py /home/snort-monitor/code/
 
 ### Modify Crontab
 echo */2 * * * *    /usr/bin/python3 /home/snort-monitor/code/main.py >> /etc/crontab
