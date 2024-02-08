@@ -1,20 +1,20 @@
 # Basic-Network-Security-Monitor
-
-## !!! Please Run as root !!!
-
 ### Install Docker & Docker Compose
-1. install Docker-compose
+#####    1. Install Docker-compose
 - https://docs.docker.com/compose/install/standalone/
-2. install Docker
-```
-    sudo apt isntall docker
-```
 
+#####    2. install Docker
+```sh
+    sudo apt update
+    sudo apt install docker -y
 ```
-    cd docker
-    docker
+#####    3.Run Docker-file (Please Edit Password Database in docker-compose.yml)
+```sh
+    cd docker-file
+    docker-compose up -d
 ```
-### 1. Modify file run.sh to config path
-### 2. runfile ./run.sh
-### 3. Python file input to crontab file, Let is run every 2 minute
-
+### Run file install.sh
+```sh
+    chmod +x  install.sh
+    ./install.sh
+```
